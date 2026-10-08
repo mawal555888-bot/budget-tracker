@@ -1,83 +1,102 @@
-# Budget Tracker
+# SpendWise Dashboard Shell
 
-## Project Overview
+## Overview
 
-This project is a personal budget tracker designed to help users record and review their expenses.
+SpendWise is a responsive personal finance dashboard shell built using HTML and modern CSS layout techniques. The project provides the visual foundation for a future budgeting application using realistic static financial information.
 
-## Visual Design
+## What I Built
 
-The Budget Tracker uses a clean and consistent visual identity:
+The dashboard contains:
 
-- Blue is used as the primary theme color.
-- White cards provide a clean background for each section.
-- Poppins is used for headings.
-- Open Sans is used for body text and form elements.
-- Rounded borders and spacing create a clear card-based layout.
-- The expense table uses alternating row colors for readability.
+- A sidebar navigation menu
+- A dashboard header
+- A spending overview section
+- Six financial category cards
+- Food, Transport, Rent, Entertainment, Savings, and Utilities categories
+- Responsive layouts for smaller screens
+- Hover and keyboard-focus micro-interactions
+- A dark theme using the user's system color preference
 
-## Main Sections
+## Project Structure
 
-### Header
-Displays the Budget Tracker title and a short description.
+### `index.html`
 
-### Add an Expense
-Provides fields for entering the expense name, amount, category, and date.
+The HTML file provides the dashboard structure, including:
 
-### Expense Table
-Displays recorded expenses using a styled table with a highlighted header and alternating row colors.
+- Sidebar navigation
+- Header and account information
+- Spending overview
+- Six category cards
+- Static financial information
 
-### Budgeting Tips
-Provides helpful information for managing expenses.
+Each dashboard card uses `tabindex="0"` so it can receive keyboard focus.
+
+### `style.css`
+
+The stylesheet provides the complete visual layout and responsive behavior.
+
+It uses:
+
+- CSS Grid for the overall dashboard
+- CSS Grid for the category card layout
+- Flexbox for the sidebar
+- Flexbox for the header
+- Flexbox inside each dashboard card
+- CSS custom properties for the color theme
+- Responsive media queries below 768px
+- Hover and focus animations
+- A dark theme using `prefers-color-scheme: dark`
+
+## Responsive Design
+
+The dashboard uses a media query below 768px.
+
+On smaller screens:
+
+- The sidebar and main content use a single-column layout
+- Navigation items become more flexible
+- The header stacks vertically
+- Category cards display in one column
+
+The responsive layout can be tested using the browser DevTools Device Toolbar.
+
+## Micro-interactions
+
+Dashboard cards include subtle hover and keyboard-focus effects.
+
+The interaction uses:
+
+- `transform`
+- `box-shadow`
+- A 200ms transition
+
+The animation applies to both mouse hover and keyboard focus.
+
+## CSS Theme
+
+The application defines its main colors using CSS custom properties inside `:root`.
+
+The variables include:
+
+- Brand color
+- Accent color
+- Surface color
+- Background color
+- Primary text color
+- Secondary text color
+- Border color
+
+A dark theme overrides these variables when the user's system prefers dark mode.
 
 ## Technologies Used
 
 - HTML5
 - CSS3
-- Google Fonts
+- CSS Grid
+- Flexbox
+- CSS Custom Properties
+- Responsive Media Queries
 
-## Files
+## Author
 
-- `index.html` — Structure and content of the Budget Tracker.
-- `style.css` — Visual styling, colors, typography, spacing, cards, form, and table.
-- `README.md` — Project documentation.# Budget Tracker
-
-## Project Overview
-This Budget Tracker is a simple HTML and CSS website for recording and displaying expenses.
-
-## What I Built
-
-### 1. Expense Table
-- Added a structured HTML table using table, thead, tbody, tr, th, and td.
-- Added five sample expenses with Name, Amount, Category, and Date.
-- Added alternating row colors and hover effects.
-
-### 2. Add Expense Form
-- Added a proper form.
-- Added inputs for expense name, amount, category, and date.
-- Added a dropdown with Food, Transport, Rent, Entertainment, and Other.
-- Added an Add Expense button with type="button".
-
-### 3. Multimedia
-- Added a Budget Tracker logo using an image.
-- Added a YouTube video using an iframe.
-
-### 4. Interactive Elements
-- Added a collapsible "How to use this tracker" section.
-- Added table row hover effects.
-- Added a pointer cursor to the button.
-
-### 5. Advanced CSS
-- Used descendant selectors.
-- Used :nth-child(even).
-- Used :hover.
-- Used :focus.
-- Used cursor: pointer.
-
-## Technologies
-- HTML5
-- CSS3
-
-## Project Files
-- index.html � page structure and content
-- style.css � styling
-- README.md � project documentation
+Mawal
