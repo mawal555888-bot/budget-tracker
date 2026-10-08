@@ -1,69 +1,51 @@
-body {/* Advanced CSS Selectors */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
 
-/* Descendant selector */
-.expenses-section td {
+header {
+    text-align: center;
+}
+
+.add-expense-section,
+.expenses-section,
+.video-section,
+.help-section {
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+input,
+select {
+    padding: 8px;
+}
+
+button {
     padding: 10px;
-}
-
-/* Position pseudo-class */
-.expenses-section tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-/* Hover effect */
-.expenses-section tr:hover {
-    background-color: #ddd;
-}
-
-/* Focus state */
-.add-expense-section input:focus,
-.add-expense-section select:focus {
-    outline: 2px solid #555;
-}
-
-/* Button pointer */
-.add-expense-section button {
     cursor: pointer;
 }
-    font-family: Arial, sans-serif;
-    margin: 25px;
+
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-h1 {
-    color: #34495e;
+th,
+td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
 }
 
-.expense-entry {
-    background-color: #f5f5f5;
-    padding: 18px;
-    margin-bottom: 22px;
+th {
+    background-color: #ddd;
 }
-
-#expense-records {
-    background-color: #eef7ee;
-    padding: 18px;
-}
- {
-    font-family: Arial, sans-serif;
-    margin: 25px;
-}
-
-h1 {
-    color: #34495e;
-}
-
-.expense-entry {
-    background-color: #f5f5f5;
-    padding: 18px;
-    margin-bottom: 22px;
-}
-
-#expense-records {
-    background-color: #eef7ee;
-    padding: 18px;
-}
-
-/* Advanced CSS Selectors */
 
 .expenses-section td {
     padding: 10px;
@@ -80,6 +62,18 @@ h1 {
 .add-expense-section input:focus,
 .add-expense-section select:focus {
     outline: 2px solid #555;
+}
+
+.expenses-section > h2 {
+    margin-bottom: 10px;
+}
+
+.expenses-section tr:first-child {
+    font-weight: bold;
+}
+
+input:not([type="date"]) {
+    border: 1px solid #999;
 }
 
 .add-expense-section button {
