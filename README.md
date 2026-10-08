@@ -1,6 +1,47 @@
 # Budget Tracker
 
 ## Project Overview
+
+This project is a personal budget tracker designed to help users record and review their expenses.
+
+## Visual Design
+
+The Budget Tracker uses a clean and consistent visual identity:
+
+- Blue is used as the primary theme color.
+- White cards provide a clean background for each section.
+- Poppins is used for headings.
+- Open Sans is used for body text and form elements.
+- Rounded borders and spacing create a clear card-based layout.
+- The expense table uses alternating row colors for readability.
+
+## Main Sections
+
+### Header
+Displays the Budget Tracker title and a short description.
+
+### Add an Expense
+Provides fields for entering the expense name, amount, category, and date.
+
+### Expense Table
+Displays recorded expenses using a styled table with a highlighted header and alternating row colors.
+
+### Budgeting Tips
+Provides helpful information for managing expenses.
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- Google Fonts
+
+## Files
+
+- `index.html` â€” Structure and content of the Budget Tracker.
+- `style.css` â€” Visual styling, colors, typography, spacing, cards, form, and table.
+- `README.md` â€” Project documentation.# Budget Tracker
+
+## Project Overview
 This Budget Tracker is a simple HTML and CSS website for recording and displaying expenses.
 
 ## What I Built
@@ -37,6 +78,6 @@ This Budget Tracker is a simple HTML and CSS website for recording and displayin
 - CSS3
 
 ## Project Files
-- index.html — page structure and content
-- style.css — styling
-- README.md — project documentation
+- index.html ï¿½ page structure and content
+- style.css ï¿½ styling
+- README.md ï¿½ project documentation
